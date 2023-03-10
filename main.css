@@ -27,12 +27,12 @@ html, body {
   line-height: normal;
 }
 
-body{
-  margin: 30px calc(-305.217px + 31.522vw);
+body .main-content{
+  margin: 60px calc(-305.217px + 31.522vw);
 }
 
 a:visited {
-	color: inherit;
+	color: white;
 }
 
 :focus {
@@ -59,6 +59,11 @@ h3{
 
 p{
   font-size: 18px;
+}
+
+ul, ol{
+  margin: 0;
+  padding: 0;
 }
 
 .btn{
@@ -96,6 +101,52 @@ img{
   position: relative;
   width: 100%;
   height: auto;
+}
+
+.main-header{
+  padding: 15px calc(-305.217px + 31.522vw);
+  background-color: var(--vermelho);
+}
+
+.main-header .header-grid ul{
+  font-style: Comic;
+  list-style: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-principal li a{
+  position: relative;
+  display: block;
+  width: fit-content;
+  font-family: Comics;
+  color: white;
+  font-size: 20px;
+}
+
+.menu-principal li a:before{
+  content: "";
+  height: 1px;
+  position: absolute;
+  background: white;
+  width: 0;
+  bottom: -2px;
+  transition: width 0.2s;
+}
+
+.menu-principal li a:hover::before{
+  width: 30px;
+}
+
+.main-header .header-grid li:not(:last-child){
+  margin-right: 20px;
+}
+
+.main-content h1{
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .movie{
@@ -168,6 +219,7 @@ form label{
 form{
   width: 600px;
   padding: 20px 0;
+  margin: auto;
 }
 
 form input, select{

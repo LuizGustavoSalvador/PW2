@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Criação de personagem Marvel</title>
+    <title>Heróis Marvel</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <h1 class="title-marvel">Criar personagem</h1>
-    <div class="formulario">
-      <form>
-        <div>
-          <label for="fname">Nome:</label>
-          <input class="input-padrao" type="text" id="fname" name="fname" placeholder="Nome">
-        </div>
-        <div>
-          <label for="lcity">Cidade natal:</label>
-          <input class="input-padrao" type="text" id="lcity" name="lcity" placeholder="Cidade natal">
-        </div>
-        <div>
-          <label for="class">Classe:</label>
-          <select name="class" id="class">
-            <option value="guerreiro">Guerreiro</option>
-            <option value="arqueiro">Arqueiro</option>
-            <option value="mago">Mago</option>
-          </select>
-        </div>
-        <div>
-          <label for="race">Raça:</label>
-          <select name="race" id="race">
-            <option value="humano">Humano</option>
-            <option value="deus">Deus</option>
-            <option value="planeta">Planeta</option>
-          </select>
-        </div>
-        <div>
-          <label for="weapons">Armas/Poderes:</label>
-          <select name="weapons" id="weapons">
-            <option value="martelo">Martelo</option>
-            <option value="espada">Espada</option>
-            <option value="magia">Magia</option>
-          </select>
-        </div>
-        <div class="radio-list">
-          <label class-="legend" for="lweapons">Realizar tutorial?</label>
-          <div class="list">
-            <div>
-              <input type="radio" name="true" value=true checked>
-              <label for="huey">Sim</label>
-            </div>
-            <div>
-              <input type="radio" name="false" value=false>
-              <label for="huey">Não</label>
+    <header class="main-header">
+      <div class="header-grid">
+          <div class="menu-wrapper">
+              <ul class="menu-principal" role="navigation">
+                  <li class="menu-item"><a class="link-menu" href="index.html">Home</a></li>
+                  <li class="menu-item"><a class="link-menu" href="criacao_personagem.html">Criar personagem</a></li>
+              </ul>
+          </div>
+      </div>
+    </header>
+    <div class="main-content">
+      <h1 class="title-marvel">Criar personagem</h1>
+      <div class="formulario">
+        <form>
+          <div>
+            <label for="fname">Nome:</label>
+            <input class="input-padrao" type="text" id="fname" name="fname" placeholder="Nome">
+          </div>
+          <div>
+            <label for="lcity">Cidade natal:</label>
+            <input class="input-padrao" type="text" id="lcity" name="lcity" placeholder="Cidade natal">
+          </div>
+          <div>
+            <label for="class">Classe:</label>
+            <select name="class" id="class">
+              <option value="guerreiro">Guerreiro</option>
+              <option value="arqueiro">Arqueiro</option>
+              <option value="mago">Mago</option>
+            </select>
+          </div>
+          <div>
+            <label for="race">Raça:</label>
+            <select name="race" id="race">
+              <option value="humano">Humano</option>
+              <option value="deus">Deus</option>
+              <option value="planeta">Planeta</option>
+            </select>
+          </div>
+          <div>
+            <label for="weapons">Armas/Poderes:</label>
+            <select name="weapons" id="weapons">
+              <option value="martelo">Martelo</option>
+              <option value="espada">Espada</option>
+              <option value="magia">Magia</option>
+            </select>
+          </div>
+          <div class="radio-list">
+            <label class-="legend" for="lweapons">Realizar tutorial?</label>
+            <div class="list">
+              <div>
+                <input type="radio" name="true" value=true checked>
+                <label for="huey">Sim</label>
+              </div>
+              <div>
+                <input type="radio" name="false" value=false>
+                <label for="huey">Não</label>
+              </div>
             </div>
           </div>
+          <div class="button">
+            <button class="btn" type="submit">Criar</button>
         </div>
-        <div class="button">
-          <button class="btn" type="submit">Criar</button>
+        </form>
       </div>
-      </form>
     </div>
   </body>
   </html>
