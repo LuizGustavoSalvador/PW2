@@ -28,7 +28,9 @@ html, body {
 }
 
 body .main-content{
+  position: relative;
   margin: 60px calc(-305.217px + 31.522vw);
+  margin-top: 110px;
 }
 
 a:visited {
@@ -86,11 +88,6 @@ ul, ol{
   border-color: var(--vermelho);
 }
 
-.main-title{
-  margin-bottom: 40px;
-  text-align: center;
-}
-
 .title-marvel{
   font-family: Comics;
   color: var(--vermelho);
@@ -104,6 +101,11 @@ img{
 }
 
 .main-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
   padding: 15px calc(-305.217px + 31.522vw);
   background-color: var(--vermelho);
 }
@@ -146,7 +148,7 @@ img{
 
 .main-content h1{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .movie{
