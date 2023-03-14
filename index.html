@@ -4,6 +4,7 @@
     <title>Heróis Marvel</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
+    <script src="assets/js/main.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -16,18 +17,19 @@
           </div>
       </div>
     </header>
+    <div id="zoom-image" class="zoom"><button class="btn" type="button" onclick="zoomOut()" title="Fechar">X</button></div>
     <div class="main-content">
       <h1 class="main-title title-marvel">Lista de filmes da Marvel</h1>
       <div class="movies-list">
         <div class="movie">
           <div class="movie-description">
             <div class="images">
-              <div class="poster"><img src="assets/images/gardioes/guardioes-poster.jpg" alt="Poster Guardiões da Galáxia Volume 3" /></div>
+              <div class="poster"><img id="1" src="assets/images/gardioes/guardioes-poster.jpg" alt="Poster Guardiões da Galáxia Volume 3" onclick="zoom(1)" /></div>
               <div class="gallery">
-                <img src="assets/images/gardioes/guardioes-1.jpg" alt="Cena Guardiões da Galáxia Volume 3" />
-                <img src="assets/images/gardioes/guardioes-2.jpg" alt="Cena Guardiões da Galáxia Volume 3" />
-                <img src="assets/images/gardioes/guardioes-3.jpg" alt="Cena Guardiões da Galáxia Volume 3" />
-                <img src="assets/images/gardioes/guardioes-4.jpg" alt="Cena Guardiões da Galáxia Volume 3" />
+               <img id="2" src="assets/images/gardioes/guardioes-1.jpg" alt="Cena Guardiões da Galáxia Volume 3" onclick="zoom(2)" />
+                <img id="3" src="assets/images/gardioes/guardioes-2.jpg" alt="Cena Guardiões da Galáxia Volume 3"  onclick="zoom(3)" />
+                <img id="4"" src="assets/images/gardioes/guardioes-3.jpg" alt="Cena Guardiões da Galáxia Volume 3"  onclick="zoom(4)" />
+                <img id="5" src="assets/images/gardioes/guardioes-4.jpg" alt="Cena Guardiões da Galáxia Volume 3"  onclick="zoom(5)" />
               </div>
             </div>
             <div class="description">
