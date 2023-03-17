@@ -4,6 +4,7 @@
     <title>Heróis Marvel</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
+    <script src="assets/js/main.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -19,18 +20,19 @@
     <div class="main-content">
       <h1 class="title-marvel">Criar personagem</h1>
       <div class="formulario">
-        <form>
+        <form id="formCharacters">
           <div>
             <label for="fname">Nome:</label>
-            <input class="input-padrao" type="text" id="fname" name="fname" placeholder="Nome">
+            <input class="input-padrao" type="text" id="name" name="name" placeholder="Nome" required>
           </div>
           <div>
             <label for="lcity">Cidade natal:</label>
-            <input class="input-padrao" type="text" id="lcity" name="lcity" placeholder="Cidade natal">
+            <input class="input-padrao" type="text" id="city" name="city" placeholder="Cidade natal" required>
           </div>
           <div>
             <label for="class">Classe:</label>
-            <select name="class" id="class">
+            <select name="class" id="class" required>
+              <option value="" disabled selected>Classe:</option>
               <option value="guerreiro">Guerreiro</option>
               <option value="arqueiro">Arqueiro</option>
               <option value="mago">Mago</option>
@@ -38,7 +40,8 @@
           </div>
           <div>
             <label for="race">Raça:</label>
-            <select name="race" id="race">
+            <select name="race" id="race" required>
+              <option value="" disabled selected>Raça:</option>
               <option value="humano">Humano</option>
               <option value="deus">Deus</option>
               <option value="planeta">Planeta</option>
@@ -46,7 +49,8 @@
           </div>
           <div>
             <label for="weapons">Armas/Poderes:</label>
-            <select name="weapons" id="weapons">
+            <select name="weapons" id="weapons" required>
+              <option value="" disabled selected>Armas/Poderes:</option>
               <option value="martelo">Martelo</option>
               <option value="espada">Espada</option>
               <option value="magia">Magia</option>
@@ -56,11 +60,11 @@
             <label class-="legend" for="lweapons">Realizar tutorial?</label>
             <div class="list">
               <div>
-                <input type="radio" name="true" value=true checked>
+                <input type="radio" name="tutorial" value="Sim" required checked>
                 <label for="huey">Sim</label>
               </div>
               <div>
-                <input type="radio" name="false" value=false>
+                <input type="radio" name="tutorial" value="Não">
                 <label for="huey">Não</label>
               </div>
             </div>
@@ -69,6 +73,10 @@
             <button class="btn" type="submit">Criar</button>
         </div>
         </form>
+      </div>
+      <div id="npcs" class="personagens">
+        <h2 class="title-marvel">Lista de personagens</h2>
+        <div id="lista-personagens" class="list"></div>
       </div>
     </div>
   </body>

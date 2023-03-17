@@ -323,3 +323,24 @@ form .button .btn{
   width: auto;
   margin: 0 5px 0 0;
 }
+
+.personagens{
+  margin-top: 60px;
+  display: none;
+}
+
+.personagens.enable{
+  display: block;
+}
+
+.personagens .list{
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 30px;
+  row-gap: 30px;
+} 
+
+.personagens h2{
+  text-align: center;
+}
